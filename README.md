@@ -1,5 +1,5 @@
 # @qte/nest-axios
-This small library is a rewrite of [@nestjs/axios](https://github.com/nestjs/axios/tree/master/lib) returning `Promises` instead of `Observables`.
+This small library is a rewrite of [@nestjs/axios](https://github.com/nestjs/axios) returning `Promises` instead of `Observables`.
 
 ## Installation
 ```bash
