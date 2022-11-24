@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
-    "test": "jest --config ./jest.json",
-    "test:watch": "jest --config ./jest.json --watch",
+    "test": "jest --config ./jest.json --runInBand",
+    "test:watch": "jest --config ./jest.json --watch --runInBand",
     "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -54,5 +54,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "axios": "^1.2.0"
   }
 }
